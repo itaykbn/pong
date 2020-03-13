@@ -1,0 +1,30 @@
+﻿class Draw {
+    
+    
+    constructor(c, ctx) {
+        this.c = c;
+        this.ctx = ctx;
+    }
+    drawBall(ball, drawColor, strokeColor = "black",lineWidth = 0) {
+        this.ctx.fillStyle = drawColor;
+        this.ctx.strokeStyle = strokeColor;
+        this.ctx.lineWidth = lineWidth;
+        this.ctx.beginPath();
+        this.ctx.arc(ball.x, ball.y, ball.w, 0, 2 * Math.PI,);
+        this.ctx.fill();
+        this.ctx.stroke();
+
+    }
+    drawRect(rect, drawColor, strokeColor = "black",lineWidth = 0) {
+        this.ctx.beginPath();
+        //this.ctx.clearRect(x, y, w, h);
+        this.ctx.fillStyle = drawColor;
+        this.ctx.strokeStyle = strokeColor;
+        this.ctx.fillRect(rect.x, rect.y, rect.w, rect.h);        
+        this.ctx.lineWidth = lineWidth;
+        this.ctx.strokeRect(rect.x, rect.y, rect.w, rect.h);
+    }
+
+
+    
+}

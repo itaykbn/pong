@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://localhost:44376/WebForm1.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    <title></title>
+    <script src="./pong game_files/main1.js.download"></script>
+    <script src="./pong game_files/object.js.download"></script>
+    <script src="./pong game_files/draw.js.download"></script>
+    <script src="./pong game_files/animator.js.download"></script>
+    <style>
+        body{
+            text-align:center;
+            background-color:black;
+          
+        }
+        input[type=button]{
+            direction:ltr;
+            font-size: x-large;
+            
+            
+            background-color:green;
+        }
+        canvas{
+            border:solid;
+            border-color:gray;
+            margin-left:28%;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <pre id="scoreBoard" style="display:none;"> <span style="color:red;font-size:80px;" id="player1">0 </span>                                                                                  <span style="color:blue ;font-size:80px;" id="player2">0</span></pre>  
+    <br>
+    <br> 
+    <br>
+    <canvas id="myCanvas" width="960" height="720" style="background-image:url(&#39;background.png&#39;); display:none;"></canvas>
+    <br>
+    <input id="start" type="button" onclick="init()" value="start game"> 
+    <input style="display:none;" id="playAgain" type="button" onclick="init()" value="Play again">
+    <input type="button" onclick="alert(&#39;paused&#39;)" value="time out">
+   
+</body><link type="text/css" id="dark-mode" rel="stylesheet" href="https://localhost:44376/WebForm1.aspx"><style type="text/css" id="dark-mode-custom-style"></style><style type="text/css" id="dark-mode-theme-changer-style"></style></html>
